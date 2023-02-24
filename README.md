@@ -48,7 +48,7 @@ This is a basic social media API built with Ruby on Rails, Devise, and Devise To
 Things you may want to cover:
 
 * Ruby version-3.0.1
-* 
+
 * Rails version -7.0.4.1
 
 * System dependencies-Ubuntu(22.04)
