@@ -21,6 +21,7 @@ class CommentsController < ApplicationController
       @comment.user = current_user
   
       if @comment.save
+        NewCommentNotificationJob.perform_now(@comment.id)
         render json: @comment, status: :created
       else
         render json: @comment.errors, status: :unprocessable_entity
